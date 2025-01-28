@@ -1,0 +1,11 @@
+{%extends '_base.html'%}
+
+{%block content%}
+<p>Filter By Preferences</p>
+<form action="" method="get">
+    {%csrf_token%}
+    {{filter}}
+
+    <input type="submit" value="Filter">
+</form>
+{%endblock%}
